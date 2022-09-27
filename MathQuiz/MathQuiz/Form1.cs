@@ -98,11 +98,11 @@ namespace MathQuiz
                 return false;
         }
 
-
-
         public Form1()
         {
             InitializeComponent();
+            DateTime date = DateTime.Now;
+            dateLabel.Text = date.ToString("dd MMMM yyy");
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
@@ -150,6 +150,11 @@ namespace MathQuiz
                 quotient.Value = dividend / divisor;
                 startButton.Enabled = true;
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
